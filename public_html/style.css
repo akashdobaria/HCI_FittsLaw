@@ -1,0 +1,65 @@
+@import url("d3/lib/jquery-ui/jquery-ui.css");
+
+body {
+	background-color: #fff;
+	font-size: 16px;
+	font-family: 'Ovo', helvetica, sans-serif;
+	font-weight: 400;
+}
+
+#dataSetContainer div {
+	border-radius: 4px;
+	margin: 2px;
+	padding: 2px 8px 2px 8px;
+        color: white;
+}
+#dataSetContainer button {
+	margin-left: 20px;
+}
+
+div.msg {
+	width: auto;
+        height: 40px;
+	position: fixed;
+	top: 20%;
+	left:50%;
+	margin-left: -100px;
+	background-color: #486685;
+	border-radius: 10px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	vertical-align: center;
+	font-family: 'Open Sans';
+	font-weight: 700;
+}
+
+circle.inactive {
+    fill: #b1e8df;
+    opacity: 0.5;
+    stroke: #a5b6b3
+}
+
+div#test-container {
+    display: inline-block;
+    position: relative;
+    height: 600px;
+    width: 600px;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 3px solid #000000;
+    margin: 10px;
+    background: #f3f3f3;
+}
+
+.control {
+    display: inline-block;
+    position: absolute;
+    margin: 10px;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 2px solid #000000;
+    background: #f3f3f3;
+}

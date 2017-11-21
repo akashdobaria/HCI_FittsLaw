@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Fitts’s Law Replication</title>
+                
+		<script type="text/javascript" src="d3/d3.v2.js"></script>
+		<script type="text/javascript" src="d3/lib/jquery/jquery.min.js"></script>
+                <script type="text/javascript" src="d3/lib/jquery-ui/jquery-ui.min.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="container">
+                    <h1 style="text-align:center;"> Fitts's Law Experiment </h1>
+                    <h4> Try to click the green highlighted circle as fast as possible. Follow the pattern when asked to change distance/width: <br>
+                        <ol> <li> Width: 50  Distance:500 </li>
+                            <li> Width: 50  Distance:350 </li>
+                            <li> Width: 50  Distance:200 </li>
+                            <li> Width: 30  Distance:500 </li>
+                            <li> Width: 30  Distance:350 </li>
+                            <li> Width: 30  Distance:200 </li>
+                        </ol>
+                     </h4>
+                    
+                    <div id="test-container" class="sans"></div>
+                    
+                    <div class="control" style="height: auto; padding: 10px; width: 278px">
+			
+                        <p>Width: <span id="widthValue"></span><br>
+                            <input type="radio" name="radioWidth" value="50" id="radio50" onclick="changeWidth(this)">50<br>
+                            <input type="radio" name="radioWidth" value="30" id="radio30" onclick="changeWidth(this)">30<br>
+                        </p>
+                        
+                        <p>Distance: <span id="distanceValue"></span><br>                                
+                                    <input type="radio" name="radioDistance" value="500" id="radio500" onclick="changeDistance(this)">500<br>                                    
+                                    <input type="radio" name="radioDistance" value="350" id="radio350" onclick="changeDistance(this)">350<br>
+                                    <input type="radio" name="radioDistance" value="200" id="radio200" onclick="changeDistance(this)">200<br>
+                        </p>
+                        
+                        <p> Data Set:  <div id="dataSetContainer"></div></p>
+                    </div>
+            </div>
+            <script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
